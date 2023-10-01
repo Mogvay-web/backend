@@ -8,20 +8,21 @@ const CONFLICT_ERROR_CODE = 409;
 const DEFAULT_ERROR_CODE = 500;
 
 // REGEXP
-const LINK_REGEXP = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9-._~:/?#[\]@!$&'()*+,;=]*)?$/im;
+const LINK_REGEXP =
+  /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9-._~:/?#[\]@!$&'()*+,;=]*)?$/im;
 
 // ALLOWED CORS DOMAINS
 const ALLOWED_CORS = [
-  'http://mesto.ld-webdev.ru',
-  'https://mesto.ld-webdev.ru',
-  'http://77.232.131.208',
-  'https://77.232.131.208',
-  'http://localhost:3000',
-  'http://localhost:3001',
+  "http://mesto.frontend.akula.nomoreparties.co",
+  "https://mesto.frontend.akula.nomoreparties.co",
+  "http://158.160.123.47",
+  "https://158.160.123.47",
+  "http://localhost:3000",
+  "http://localhost:3001",
 ];
 
 // ALLOWED METHODS
-const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
+const DEFAULT_ALLOWED_METHODS = "GET,HEAD,PUT,PATCH,POST,DELETE";
 
 module.exports = {
   CREATE_CODE,
